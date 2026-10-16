@@ -1,39 +1,73 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>プライバシーポリシー</title><style>body{max-width:42rem;margin:2rem auto;padding:0 1rem;font:16px/1.8 system-ui,"Hiragino Sans","Yu Gothic",sans-serif;color:#222}h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:2rem}nav a{margin-right:1rem}@media(prefers-color-scheme:dark){body{background:#181818;color:#ddd}a{color:#8ab4f8}}</style></head><body><nav><a href="./">ホーム</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav><h1>プライバシーポリシー</h1>
-<p>ソクミル購入履歴ビューア(以下「本拡張機能」)での、情報の扱いを定めます。制定日: 2026年10月9日。</p>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>プライバシーポリシー</title>
+<style>body{max-width:42rem;margin:2rem auto;padding:0 1rem;font:16px/1.8 system-ui,"Hiragino Sans","Yu Gothic",sans-serif;color:#222}h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:2rem}h3{font-size:1rem;margin-top:1.4rem}nav a{margin-right:1rem}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border:1px solid #ccc;padding:.4rem .5rem;text-align:left;vertical-align:top}@media(prefers-color-scheme:dark){body{background:#181818;color:#ddd}a{color:#8ab4f8}th,td{border-color:#444}}</style>
+</head>
+<body>
+<nav>
+<a href="./">ホーム</a>
+<a href="privacy.html">プライバシーポリシー</a>
+<a href="terms.html">利用規約</a>
+</nav>
+<h1>プライバシーポリシー</h1>
+<p>購入履歴ビューアの3つの拡張機能(ソクミル購入履歴ビューア、FANZA購入済みビューア、MGS動画購入済みビューア。以下まとめて「本拡張機能」)での、情報の扱いを定めます。3つとも同じ作りで、扱う情報と扱い方は共通です。サイトごとに違う点は、その都度書き分けます。</p>
+<p>制定日: 2026年10月9日 / 改定日: 2026年10月16日(FANZA購入済みビューアとMGS動画購入済みビューアを対象に加えました)</p>
+
 <h2>1. 取り扱う情報</h2>
 <ul>
-<li>ソクミルの購入履歴(作品名、品番、購入日、画質など)と、そこから取得した作品情報。</li>
-<li>利用者が付けたお気に入り、備考、手入力した作品情報。</li>
-<li>Googleドライブとの同期に使う、Googleのアクセストークンと、同期の設定。</li>
+<li>利用者が購入した作品の一覧と、そこから取得した作品情報。作品名、品番や作品ID、購入日、画質、パッケージ画像のURL、出演者、メーカー、ジャンル、収録時間などです。</li>
+<li>利用者が付けたお気に入り、備考、手入力した作品情報、保存した検索条件。</li>
+<li>Googleドライブとの同期に使う、Googleのアクセストークンと、同期の設定(合言葉、つないでいるGoogleアカウントのメールアドレスと名前、自動で同期するかどうか)。</li>
 </ul>
+
 <h2>2. 保存先</h2>
-<p>上の情報は、利用者のブラウザ内(拡張機能のローカル保存領域)に保存します。開発者のサーバーはなく、開発者がこれらの情報を受け取ることはありません。</p>
+<p>上の情報は、利用者のブラウザ内(拡張機能のローカル保存領域)に保存します。拡張機能ごとに別々に保存し、3つの拡張機能の間で購入履歴や作品情報を受け渡すことはありません。開発者のサーバーはなく、開発者がこれらの情報を受け取ることはありません。</p>
+<p>Googleのアクセストークンは、ブラウザを閉じると消える領域に置きます。</p>
+
 <h2>3. Googleドライブの利用</h2>
 <p>同期機能を有効にした場合のみ、次の権限を使います。</p>
 <ul>
 <li>権限: <code>https://www.googleapis.com/auth/drive.appdata</code>(Googleドライブのアプリ専用領域の利用)</li>
-<li>用途: 取り込んだデータを暗号化したファイル1つを、この領域に保存し、別のブラウザから読み込むため。</li>
+<li>用途: 取り込んだデータを暗号化したファイル1つを、この領域に保存し、別のブラウザから読み込むため。ファイルは拡張機能ごとに別です。</li>
 <li>データは、利用者が設定した合言葉からAES-GCMで暗号化してから送ります。合言葉を変更していない場合は初期値のままになるため、強く守りたいときは合言葉を変更してください。</li>
 <li>この領域は本拡張機能からしか見えず、利用者のドライブにある他のファイルは読み書きしません。</li>
 </ul>
 <p>本拡張機能によるGoogleのユーザーデータの利用は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>(限定利用の要件を含む)に従います。</p>
+
 <h2>4. 外部サービスへの通信</h2>
-<p>本拡張機能は、次のサイトに通信します。いずれも、購入履歴や作品情報の取得のためで、利用者の情報を送る目的ではありません。</p>
+<p>本拡張機能は、次のサイトに通信します。購入済みの一覧、作品情報、再生先は、利用者がそのサイトにログインしている状態のまま、利用者のブラウザから直接取得します。利用者の情報を開発者や第三者に送る目的の通信はありません。</p>
+<table>
+<tr><th>拡張機能</th><th>通信先</th><th>目的</th></tr>
+<tr><td>ソクミル購入履歴ビューア</td><td>ソクミル(www.sokmil.com、img.sokmil.com)</td><td>購入履歴、商品ページの作品情報、パッケージ画像の取得。購入履歴のページを開いての再生</td></tr>
+<tr><td>FANZA購入済みビューア</td><td>FANZA(video.dmm.co.jp、api.video.dmm.co.jp、www.dmm.co.jp、画像の配信元)</td><td>購入済み商品の一覧とパッケージ画像の取得。再生先の取得と、プレーヤーを開くこと</td></tr>
+<tr><td>MGS動画購入済みビューア</td><td>MGS動画(www.mgstage.com、image.mgstage.com)</td><td>購入済み商品の一覧、購入履歴、商品ページの作品情報、パッケージ画像の取得。プレーヤーを開くこと</td></tr>
+<tr><td>3つとも</td><td>Google(accounts.google.com、www.googleapis.com、oauth2.googleapis.com)</td><td>同期機能を有効にした場合の、ログインとドライブ同期</td></tr>
+</table>
+<p>ソクミル購入履歴ビューアでは、利用者が作品情報の手入力で作品URLを入れた場合に限り、次の通信もします。ソクミルの作品URLなら、その作品ページを読み取ります。FANZAの作品URLなら、その作品のパッケージ画像をFANZAの画像の配信元(pics.dmm.co.jp など)から表示します。</p>
+
+<h2>5. 同じブラウザに入っている拡張機能との受け渡し</h2>
+<p>本拡張機能は、同じブラウザに入っている次の拡張機能とだけ、ブラウザの中で情報を受け渡すことがあります。受け渡しは利用者のブラウザの中で完結し、外部には送りません。</p>
 <ul>
-<li>ソクミル(sokmil.com): 購入履歴と商品ページの取得。</li>
-<li>hopperk.com: 日替わり動画の中身の対応表の取得。</li>
-<li>FANZA(dmm.co.jp 系): 利用者が作品URLを手入力した作品の、作品情報と画像の取得。</li>
-<li>Google(googleapis.com、accounts.google.com): ログインとドライブ同期。</li>
+<li>本拡張機能どうし: 同期を設定していない拡張機能で、利用者が「(ほかの拡張機能)の同期設定を使って始める」を押した場合に限り、設定済みの拡張機能から、同期の設定(合言葉、Googleアカウントのメールアドレスと名前、自動で同期するかどうか)を受け取ります。購入履歴や作品情報は受け渡しません。</li>
+<li>開発者が個人用に作った補助の拡張機能: 一般には配布していません。利用者がこれを入れている場合に限り、必要に応じて作品のIDや品番を渡し、作品情報を受け取ります。入れていなければ、この受け渡しは起きません。</li>
 </ul>
-<h2>5. 第三者への提供</h2>
-<p>取り扱う情報を、広告、分析、販売などの目的で第三者に提供することはありません。上の外部サービスとの通信を除き、外部に送信しません。</p>
-<h2>6. データの削除</h2>
+
+<h2>6. 第三者への提供</h2>
+<p>取り扱う情報を、広告、分析、販売などの目的で第三者に提供することはありません。4と5に書いた通信と受け渡しを除き、外部に送信しません。</p>
+
+<h2>7. データの削除</h2>
 <ul>
-<li>ブラウザから拡張機能を削除すると、ブラウザ内のデータは消えます。</li>
-<li>Googleドライブ上の同期ファイルは、Googleアカウントの設定(サードパーティ アクセス)から本拡張機能の接続を解除し、アプリのデータを削除することで消せます。</li>
+<li>ブラウザから拡張機能を削除すると、その拡張機能のブラウザ内のデータは消えます。</li>
+<li>Googleドライブ上の同期ファイルは、Googleアカウントの設定(サードパーティ アクセス)から該当する拡張機能の接続を解除し、アプリのデータを削除することで消せます。</li>
 </ul>
-<h2>7. 改定</h2>
-<p>内容を改定するときは、このページを更新します。</p>
-<h2>8. 連絡先</h2>
+
+<h2>8. 改定</h2>
+<p>内容を改定するときは、このページを更新し、改定日を書き換えます。</p>
+
+<h2>9. 連絡先</h2>
 <p>このページを公開しているGitHubリポジトリのIssueで受け付けます。</p>
-</body></html>
+</body>
+</html>
